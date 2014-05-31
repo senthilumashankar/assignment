@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="twitterassignment" default="build" basedir=".">
+
+ 	<description>Twitter Assignment</description>
+
+	<property file="build.properties" />
+	<path id="classpath">
+	</path>
+	<path id="run.classpath">
+		<pathelement location="./classes"/>
+	</path>
+
+
+	<target name="init">
+		<mkdir dir="classes" />
+	</target>
+
+	<target name="compile" depends="init">
+		<javac srcdir="src" destdir="classes" debug="yes">
+			<classpath refid="classpath" />
+		</javac>
+		
+	</target>
+
+	<target name="build" depends="compile" description="Compile"/>
+    
+     
+    
+</project>
+
