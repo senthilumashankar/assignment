@@ -61,7 +61,7 @@ public class RunTwitterInConsole {
 	public static void main(String args[]) {
 
 		System.out.println("Usage");
-		System.out.println("posting: <user name> <message>");
+		System.out.println("posting: <user name> -> <message>");
 		System.out.println("reading: <user name>");
 		System.out.println("following: <user name> follows <another-user>");
 		System.out.println("wall: <user name> wall");
